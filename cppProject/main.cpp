@@ -81,7 +81,7 @@ public:
     
 };
 
-int main(int argc, const char * argv[]) {
+int main01(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     mypoint p1(10,10);
@@ -91,5 +91,6 @@ int main(int argc, const char * argv[]) {
     circal c1(p1, 5);
     circal c2 = circal(p2, 5);
     c1.isintersects(c2);
+    
     return 0;
 }
