@@ -44,6 +44,7 @@ public:
         }
     Teacher(const Teacher &tempT)
     {
+        age = tempT.age;
             cout<<"赋值构造 Teacher"<<endl;
         }
     Teacher ()
@@ -67,7 +68,9 @@ void pushIn(Teacher p)
 int main()
 {
         Teacher t(20,10);
-        Teacher t2 = t;
+        Teacher t2 = t;  //赋值构造函数的第一种应用场景 ，用一个已经存在的对象来初始化另一个新建的对象
+        Teacher t5(t);   //赋值构造函数的第二种应用场景 ，用一个已经存在的对象来初始化另一个新建的对象
+    cout<<"t5.age = \t"<<t5.age<<endl;
         Teacher &t3 = t2;
         Teacher t4 = testConstructor();
         pushIn(t3);
