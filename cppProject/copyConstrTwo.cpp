@@ -73,6 +73,6 @@ int main()
     cout<<"t5.age = \t"<<t5.age<<endl;
         Teacher &t3 = t2;
         Teacher t4 = testConstructor();
-        pushIn(t3);
+        pushIn(t3);      //赋值构造函数的第三种应用场景 ，做为实参传给形参的时候
         return 0;
 }
